@@ -13,9 +13,10 @@
    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
    crossorigin=""></script> 
-   
+	
+   <script src="LeafletData/jquery-3.6.0.js"></script> 
+
    <link rel="Custom Stylesheet" href="style.css">
-   
   </head>
 <body>
 
@@ -39,7 +40,7 @@
 
   <script>
   // initialize the map
-  var map = L.map('map').setView([44.14680065102939, -78.44849037682151], 15);
+  var map = L.map('Map_Leaflet').setView([44.14680065102939, -78.44849037682151], 15);
 
   // load a tile layer
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
@@ -49,16 +50,16 @@
     }).addTo(map); 
 	  
 // load GeoJSON from an external file
-  $.getJSON("MVT_Trails_FeaturesToJSON2.geojson",function(data){
+  $.getJSON("LeafletData/MVT_Trails_FeaturesToJSON2.geojson",function(data){
     // add GeoJSON layer to the map once the file is loaded
     L.geoJson(data).addTo(map);
   });
 
 	  // load GeoJSON from an external file
-  $.getJSON("Fishing.geojson",function(data){
+  $.getJSON("LeafletData/Fishing.geojson",function(data){
     //Add fish icon 
 	var fishIcon = L.icon({
-    iconUrl: 'Fishing.png',
+    iconUrl: 'LeafletData/Fishing.png',
     iconSize: [50,40]
   }); 
   L.geoJson(data  ,{
