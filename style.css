@@ -17,12 +17,17 @@
   top: 0;
   left: 0;
   width: 80%;
-  max-width: 1200px;
-  max-height: 700px
+  max-width: 1280px;
+  max-height: 720px
 }
 
 #Map_Leaflet {
   height: 480px;
+}
+
+#Map_Leaflet01 {
+  height: 720px;
+  width: 1280px;
 }
 
 #logo {
