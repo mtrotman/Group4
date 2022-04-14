@@ -16,8 +16,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 800%;
+  width: 80%;
   max-width: 1200px;
+  max-height: 700px
 }
 
 #Map_Leaflet {
