@@ -79,26 +79,42 @@
 </div>
 
 <!-- Heading --> 
-<h3> Exploring Leaflet as a solution for the Baxter Creek Water Shed Alliance website </h3> 
-<p> Problem: There are no good maps about the Baxter Creek Watershed.As a result, individuals are not aware of the Baxter Creek Watershed or watersheds in general.</p>  
-<p> Solution: Create a thematic map to display and educate the general public on the Baxter Creek Watershed using Leaflet.</p>   
-	<p> What is leaflet? </p>
-<p> The map featured on this page was created using Leaflet. There are a few steps that were taken to produce it: <p/> Leaflet is an open-source JavaScript library for mobile-friendly interactive maps. Leaflet features expansive libraries of third party plugins to choose from when creating your map. These range from but are not limited to tile & image layers, types of overlay displays and different types of user interfaces.</p> 
-	<p> Why use Leaflet? </p> 
-	Leaflet is open source, which means the original source code of Leaflet is made freely available and may be redistributed and modified. Secondly, Leaflet is light weight and mobile friendly. It works across a mobile and desktop platforms. Thirdly, the Leaflet API is well documented and with a focus on being easy to use. Lastly, there is a strong community behind Leaflet that makes it possible.  
-	
-<!--Solution Steps--> 
-	<p> Below are the steps we took to create the map featured on this page:</p>
-	
-<!-- Step 1 -->  
-<p> We followed the Quick Start Guide featured on the Leaflet Website: https://leafletjs.com/SlavaUkraini/examples/quick-start/  
+<h3><b> Exploring Leaflet as a solution for the Baxter Creek Water Shed Alliance website </b></h3> 
+<br>
+<h2><b> Problem:</b></h2> 
+<p>There are no good maps about the Baxter Creek Watershed. As a result, visitors to the area are not aware of the Baxter Creek Watershed and it's ecological or natural features.They may get lost whilst using the trails and miss key points of interest. </p>  
+<br>
+<h2><b> Solution:</b></h2>
+To create a thematic map to display and educate the general public on the Baxter Creek Watershed, using Leaflet.</p>   
+<br>
+<h2><b> What is leaflet? </b></h2>
+<p> The map featured on this page was created using Leaflet. Leaflet is an open-source JavaScript library for mobile-friendly interactive maps. Leaflet features expansive libraries of third party plugins to choose from when creating your map. These range from but are not limited to tile & image layers, types of overlay displays and different types of user interfaces. These plug-ins are simple and effective to use. </p> 
+<br>
+<h2><b> Why use Leaflet? </b></h2> 
+<p> Leaflet is open source, which means the original source code of Leaflet is made freely available and may be redistributed and modified. Secondly, Leaflet is light weight and mobile friendly. It works across a variety mobile and desktop platforms. Thirdly, the Leaflet API is well documented, with a focus on being easy to use. Lastly, there is a strong community behind Leaflet that makes it's useage possible.</p>  
+<br>	
+<!--Solution Steps-->  
+<h2><b> Solution Steps </b></h2> 
+<p> Below are the steps we took to create the map featured on this page:</p>
+<br>	
+<h2></b>Step 1<b><h2> 
+<p>A group Github repository was created for Group4. All files used in this website are hosted there.</p> 
+<br>	
+<h2></b>Step 2<b><h2> 	
+<p> The group created CreateLeaflet.html using the Quick Start Guide featured on the Leaflet Website: https://leafletjs.com/SlavaUkraini/examples/quick-start/. The Esri.WorldStreetMap tile layer from  https://leaflet-extras.github.io/leaflet-providers/preview/ was selected however, it did not show. Thus, a tile layer from open street maps was chosen.  
 <!--insert screen shot --!>
 	
-<!-- Step 2 -->  
-<!-- Step 3 -->  
-<!-- Step 4 -->  
-<!-- Step 5 -->  
-<!-- Step 6 -->
+<h2></b>Step 3<b><h2> 	
+Converted trails shape file to .geojason using ArcGISPro using the Features to GeoJSON conversion tool. Loaded this to Group 4 Github repository. 
+	
+<h2></b>Step 4<b><h2> 	
+Used geojson.io to create hypothetical fishing points in the Baxter Creek Water Shed. Saved this file to Grpup 4 Github repository. 
+	
+<h2></b>Step 5<b><h2> 	  
+Experienced a bit of difficult trying to format the map size.There seemed to be conflict between with custom css file. Percentage sizing did not work whilst fixed pixel sizings did.
+ 
+<h2></b>Step 6<b><h2> 	
+<p> We used iframe to intgrate map into this webpage as it was an easier solution.</p>
 
 <!-- native species -->
 <div class="w3-container w3-padding-64 w3-center" id="team">
