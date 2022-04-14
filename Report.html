@@ -42,115 +42,70 @@
   </div>
 </div>
 
-<!-- Image Header (team logo) -->
-<div class="w3-display-container w3-animate-opacity">
-  <img src="/w3images/sailboat.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
-  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
-    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">Button</button>
-  </div>
-</div>
-
-<!-- Modal -->
-<div id="id01" class="w3-modal">
-  <div class="w3-modal-content w3-card-4 w3-animate-top">
-    <header class="w3-container w3-teal w3-display-container"> 
-      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
-      <h4>Visit BCWA Website</h4>
-      <h5>You are welcome to come and visit us<i class="fa fa-smile-o"></i></h5>
-    </header>
-    <div class="w3-container">
-      <p></p>
-      <p>Go to our <a class="w3-text-teal" href="https://baxtercreekwatershed.org/">baxtercreekwatershed.org</a> to learn more about us!</p>
-    </div>
-    <footer class="w3-container w3-teal">
-      <p>Baxter Creak Watershed Alliance</p>
-    </footer>
-  </div>
-</div>
-
 <div id="Map01">
   <iframe id="Map01frame" src="mapbox.html" frameborder = "0" allowfullscreen></iframe>
 </div>
 
-<!-- native species -->
-<div class="w3-container w3-padding-64 w3-center" id="team">
-<h2>NATIVE SPECIES</h2>
-<p>Here are some species found in Baxter Creek</p>
+<!-- Heading --> 
+<h1><b> Exploring Leaflet as a solution for the Baxter Creek Water Shed Alliance website </b></h1> 
+<br>
+<h2><b> Problem: </b></h2> 
+<p>There are no good maps about the Baxter Creek Watershed. As a result, visitors to the area are not aware of the Baxter Creek Watershed and it's ecological or natural features.They may get lost whilst using the trails and miss key points of interest. </p>  
+<br>
+<h2><b> Solution: </b></h2>
+To create a thematic map to display and educate the general public on the Baxter Creek Watershed, using Leaflet.</p>   
+<br>
+<h2><b> What is Leaflet? </b></h2>
+<p> The map featured on this page was created using Leaflet. Leaflet is an open-source JavaScript library for mobile-friendly interactive maps. Leaflet features expansive libraries of third party plugins to choose from when creating your map. These range from, but are not limited to, tile & image layers, types of overlay displays and different types of user interfaces. These plug-ins are simple and effective to use. </p> 
+<br>
+<h2><b> Why use Leaflet? </b></h2> 
+<p> Leaflet is open source, which means the original source code of Leaflet is made freely available and may be redistributed and modified. Secondly, Leaflet is light weight and mobile friendly. It works across a variety mobile and desktop platforms. Thirdly, the Leaflet API is well documented, with a focus on being easy to use. Lastly, there is a strong community behind Leaflet that makes it possible. </p>  
+<br>	
 
-<div class="w3-row"><br>
+<!--Solution Steps-->  
+<h2><b> Solution Steps: </b></h2> 
+<p> Below are the steps we took to create the map featured on this page: </p>
+<br>	
 
-<div class="w3-quarter">
-  <img src="brooktrout.jpg" alt="BrookTrout" style="width:45%" class="w3-circle w3-hover-opacity">
-  <h3>Brook Trout</h3>
-  <p>Salvelinus fontinalis</p>
-</div>
+<h2><b>Step 1: </b></h2> 
+<p>A group Github repository was created for Group4. All files used in this website are hosted there.</p> 
+<br>	
+	
+<h2><b>Step 2: Quick Start Guide - Leaflet </b></h2> 	
+<p> The group created CreateLeaflet.html using the Quick Start Guide featured <a href="https://leafletjs.com/SlavaUkraini/examples/quick-start/">Here</a>. This guide used the mapbox/streets-v11 tiles from Mapbox’s Static Tiles API. In order to use this, we were asked to use an access token. Thus, we requested the public default access token to use the tile layer from MapBox. We experienced difficulties using this token and accessing the tile layer. </p> 
+<img src="QuickStartGuide.jpg" alt="Quick Start Guide of Leaflet">
+<br>
+	
+<h2><b>Step 3: Simple Leaflet Examples - Github </b></h2> 	 
+<p> Alternative examples in Github were turned to understand how to integrate tiles into the map we were creating. The following examples were used to understand how different plugins looked once deployed from Github. Even though they were slightly complex to follow along with at times, it helped in understanding the basics of using Leaflet. These examples were created by <a href="map:https://github.com/Lapizistik/leaflet-examples">by Klaus Stein</a> and <a href="https://github.com/StephSaephan/leaflet-map-example">Stephanie Saephan</a> in Github.</p>  
+<p>insert tile layer 1 here</p>
+<br>
 
-<div class="w3-quarter">
-  <img src="Smallmouth_bass.png" alt="Small Mouth Bass" style="width:45%" class="w3-circle w3-hover-opacity">
-  <h3>Smallmouth Bass</h3>
-  <p>Micropterus dolomieu</p>
-</div>
-
-<div class="w3-quarter">
-  <img src="largemouthbass.jpg" alt="Largemouth Bass" style="width:45%" class="w3-circle w3-hover-opacity">
-  <h3>Largemouth Bass</h3>
-  <p>Micropterus salmoides</p>
-</div>
-
-<div class="w3-quarter">
-  <img src="muskellunge.jpg" alt="Muskellunge" style="width:45%" class="w3-circle w3-hover-opacity">
-  <h3>Muskellunge</h3>
-  <p>Esox masquinongy</p>
-</div>
-
-</div>
-</div>
-
-<!-- Work Row -->
-<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
-
-<div class="w3-quarter">
-<h2>Product Solution</h2>
-<p> Welcome! The purpose of this website is to educate visitors about Baxter Creek and its surrounding watershed. Visitors are invited to explore the thematic map above to learn about the different native species you can find along the trails.</p>
-Furthermore, there are several activites such as fishing, hiking and fishing that take place throughout the year. </div>
-
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="fishing.jpg" alt="Fishing" style="width:100%">
-  <div class="w3-container">
-  <h3>Fishing</h3>
-  
-  <p>Info on fishing here</p>
-  
-  </div>
-  </div>
-</div>
-
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="hiking1.jpg" alt="Hiking" style="width:100%">
-  <div class="w3-container">
-  <h3>Hiking</h3>
-  
-  <p>Info on Hiking here</p>
-  
-  </div>
-  </div>
-</div>
-
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="snowshoeing.jpg" alt="Snowshoeing" style="width:100%">
-  <div class="w3-container">
-  <h3>Snowshoeing</h3>
-  
-  <p>Info on Snowshoeing here</p>
-  
-  </div>
-  </div>
-</div>
-
-</div>
+<h2><b>Step 4:Implement Tiles</b></h2> 	 
+<p>This webpage created by <a href="https://maptimeboston.github.io/leaflet-intro/">Andy Woodruff, Ryan Mullins and Cristen Jones</a>  for Maptime Boston featured a rather simple tutorial to Leaflet which the group eneded up using. We used their example to integrate the tile layer: OpenStreetMap.Mapnik from <a href="http://leaflet-extras.github.io/leaflet-providers/preview/">here</a> into our map using JQuery. There was difficulty in downloading JQuery v3.6.0 from jquery.com in Chrome, Mozilla and Edge for some time for reasons unknown. However, the JQuery Javascript library was downloaded and uploaded to the repository. 
+<p>insert tile layer 1 here</p>
+<br>
+	
+	
+<h2><b>Step 5:Converted MVT_Trails_Feature shape file to GeoJSON file</b></h2> 	  
+<p>The MVT_Trails_Features shape file was downloaded from ArcGIS Online and converted  to GeoJSON using ArcGISPro using the Features to GeoJSON conversion tool. This was uploaded to the Group 4 repository and accessed/added to the current map using Javascript.</p>  
+<p>insert screen shot </p> 
+<br>
+	
+<h2><b>Step 6: Created points Fishing Spots using geojson.io</b></h2> 	
+<p>The group used geojson.io to create hypothetical fishing points in the Baxter Creek Water Shed. This GeoJSON file was saved to the Group 4 Github repository. These points were edited to represent fishing icons and added to the current map using Javascript.</p>  
+<p>insert screen shot </p> 
+<br>
+	
+<h2><b>Step 7: Map formatting and Sizing Difficuties</b></h2> 	  
+<p>When resizing the map, there seemed to be conflict  with the custom css file. Percentage sizings did not work whilst fixed pixel sizings did.</p> 
+<p>insert screen shot </p>  
+<br>
+ 
+<h2><b>Step 6: Iframe</b></h2> 	
+<p> We used iframe to put one interactive map html into another webpage. We did this to better control the dimension of the map frame.</p> 
+<p>insert screen shot </p> 
+<br> 
 
 <!-- Container -->
 <div class="w3-container" style="position:relative">
