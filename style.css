@@ -14,3 +14,11 @@
 #Map_Leaflet {
   height: 480px;
 }
+
+#logo {
+  width:80%;
+  min-height:21px;
+  max-height:336px;
+  min-width:50px;
+  max-width:800px;
+}
