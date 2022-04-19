@@ -85,6 +85,67 @@
   <iframe id="Map01frame" src="mapbox.html" frameborder = "0" allowfullscreen></iframe>
 </div>
 
+<!-- Heading --> 
+<h1><b> Exploring MapBox as a solution for the Baxter Creek Water Shed Alliance Website </b></h1> 
+<br>
+<h2><b> Problem: </b></h2> 
+<p>There are no good maps about the Baxter Creek Watershed. As a result, visitors to the area are not aware of the Baxter Creek Watershed and it's ecological or natural features.They may get lost whilst using the trails and miss key points of interest. </p>  
+<br>
+<h2><b> Solution: </b></h2>
+To create a thematic map to display and educate the general public on the Baxter Creek Watershed, using MapBox.</p>   
+<br>
+<h2><b> What is MapBox? </b></h2>
+<p> MapBox is an online tool that gives people access to nagivation tools. Technology behind many apps that help people get to where they need to be. Thousands of companies utilize MapBox services in aid of navigational software in cars and smartphones. There are over 600 million monthly active users that trust their ability to run their services. This is a global service delivering to customers in farming, manufacturing, ecommerce and more industries.  </p> 
+<br>
+<h2><b> Why use MapBox? </b></h2> 
+<p> MapBox delivers results for any type of service needed. They are constantly updating their services to keep up with industry requirements. There are many options of Mapbox to fully supply any services needed of a client. The clientelle ranges from BMW to National Geographic to CNN. </p>  
+<br>	
+
+<!--Solution Steps-->  
+<h2><b> Solution Steps: </b></h2> 
+<p> Below are the steps we took to create the map featured on this page: </p>
+<br>	
+
+<h2><b>Step 1: </b></h2> 
+<p>A group Github repository was created for Group4. All files used in this website are hosted there.</p> 
+<br>	
+	
+<h2><b>Step 2: Quick Start Guide - Leaflet </b></h2> 	
+<p> The group created CreateLeaflet.html using the Quick Start Guide featured <a href="https://leafletjs.com/SlavaUkraini/examples/quick-start/">Here</a>. This guide used the mapbox/streets-v11 tiles from Mapbox’s Static Tiles API. In order to use this, we were asked to use an access token. Thus, we requested the public default access token to use the tile layer from MapBox. We experienced difficulties using this token and accessing the tile layer. </p> 
+<img src="QuickStartGuide.jpg" alt="Quick Start Guide of Leaflet">
+<br>
+	
+<h2><b>Step 3: Simple Leaflet Examples - Github </b></h2> 	 
+<p> Alternative examples in Github were turned to understand how to integrate tiles into the map we were creating. The following examples were used to understand how different plugins looked once deployed from Github. Even though they were slightly complex to follow along with at times, it helped in understanding the basics of using Leaflet. These examples were created by <a href="map:https://github.com/Lapizistik/leaflet-examples">by Klaus Stein</a> and <a href="https://github.com/StephSaephan/leaflet-map-example">Stephanie Saephan</a> in Github.</p>  
+<p>insert tile layer 1 here</p>
+<br>
+
+<h2><b>Step 4:Implement Tiles</b></h2> 	 
+<p>This webpage created by <a href="https://maptimeboston.github.io/leaflet-intro/">Andy Woodruff, Ryan Mullins and Cristen Jones</a>  for Maptime Boston featured a rather simple tutorial to Leaflet which the group eneded up using. We used their example to integrate the tile layer: OpenStreetMap.Mapnik from <a href="http://leaflet-extras.github.io/leaflet-providers/preview/">here</a> into our map using JQuery. There was difficulty in downloading JQuery v3.6.0 from jquery.com in Chrome, Mozilla and Edge for some time for reasons unknown. However, the JQuery Javascript library was downloaded and uploaded to the repository. 
+<p>insert tile layer 1 here</p>
+<br>
+	
+	
+<h2><b>Step 5:Converted MVT_Trails_Feature shape file to GeoJSON file</b></h2> 	  
+<p>The MVT_Trails_Features shape file was downloaded from ArcGIS Online and converted  to GeoJSON using ArcGISPro using the Features to GeoJSON conversion tool. This was uploaded to the Group 4 repository and accessed/added to the current map using Javascript.</p>  
+<p>insert screen shot </p> 
+<br>
+	
+<h2><b>Step 6: Created points Fishing Spots using geojson.io</b></h2> 	
+<p>The group used geojson.io to create hypothetical fishing points in the Baxter Creek Water Shed. This GeoJSON file was saved to the Group 4 Github repository. These points were edited to represent fishing icons and added to the current map using Javascript.</p>  
+<p>insert screen shot </p> 
+<br>
+	
+<h2><b>Step 7: Map formatting and Sizing Difficuties</b></h2> 	  
+<p>When resizing the map, there seemed to be conflict  with the custom css file. Percentage sizings did not work whilst fixed pixel sizings did.</p> 
+<p>insert screen shot </p>  
+<br>
+ 
+<h2><b>Step 6: Iframe</b></h2> 	
+<p> We used iframe to put one interactive map html into another webpage. We did this to better control the dimension of the map frame.</p> 
+<p>insert screen shot </p> 
+<br> 
+
 <!-- native species -->
 <div class="w3-container w3-padding-64 w3-center" id="team">
 <h2>NATIVE SPECIES</h2>
