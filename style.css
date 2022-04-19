@@ -13,22 +13,29 @@
   text-align: center;
   padding-top: 56.25%;
 }
-#Map01frame {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 
-#Map03frame {
+#Map02frame {
   position: absolute;
+  text-align: center;
   top: 0;
   left: 0;
   width: 90%;
   height: 90%;
   max-width: 1280px;
-  max-height: 720px
+  max-height: 720px;
+  frameborder = "2"
+}
+
+#Map03frame {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 90%;
+  max-width: 1280px;
+  max-height: 720px;
+  frameborder = "2"
 }
 
 #Map_Leaflet {
