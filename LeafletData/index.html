@@ -51,7 +51,10 @@
 
     }
   }  ).addTo(map); 
-	  
+
+	  function forEachFeature(feature, layer) {
+
+            var popupContent = "<p><b>Trail Name: </b>"+ feature.properties.Name</p>;  
 });	  
 	L.control.scale().addTo(map);
   </script>
