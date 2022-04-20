@@ -28,6 +28,7 @@
       maxZoom: 19,
     }).addTo(map);
 	  
+	L.control.scale().addTo(map);	  
 
 	// load GeoJSON from an external file
   $.getJSON("LeafletData/MVT_Trails_FeaturesToJSON2.geojson",function(data){
