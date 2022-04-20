@@ -46,7 +46,7 @@
   L.geoJson(data  ,{
     pointToLayer: function(feature,latlng){
 	var marker = L.marker(latlng,{icon: fishIcon});
-  marker.bindPopup(feature.properties.Name);
+  marker.bindPopup(Feature.properties.AREA).openPopup();
   return marker; 
 
     }
