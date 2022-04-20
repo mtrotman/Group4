@@ -46,12 +46,11 @@
   L.geoJson(data  ,{
     pointToLayer: function(feature,latlng){
 	var marker = L.marker(latlng,{icon: fishIcon});
-  marker.bindPopup("Name of Trail: " + feature.properties.Name).openPopup();;
+  marker.bindPopup(feature.properties.Name);
   return marker; 
 
     }
-  }  ).addTo(map); 
-
+  }).addTo(map); 
 });	  
 	L.control.scale().addTo(map);
   </script>
