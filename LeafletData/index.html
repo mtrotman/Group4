@@ -46,15 +46,12 @@
   L.geoJson(data  ,{
     pointToLayer: function(feature,latlng){
 	var marker = L.marker(latlng,{icon: fishIcon});
-  marker.bindPopup("<b>Fishing Spot</b><br>").openPopup();;
+  marker.bindPopup("feature.properties.Name").openPopup();;
   return marker; 
 
     }
   }  ).addTo(map); 
 
-	  function forEachFeature(feature, layer) {
-
-            var popupContent = "<p><b>Trail Name: </b>"+ feature.properties.Name</p>;  
 });	  
 	L.control.scale().addTo(map);
   </script>
