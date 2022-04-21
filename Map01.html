@@ -80,7 +80,18 @@ $.getJSON("LeafletData/Well.geojson",function(data){
 		}
   }  ).addTo(map);
 });	  	  
-		
+	  
+var legend = L.control({ position: "bottomright" });
+legend.onAdd = function(map) {
+  var div = L.DomUtil.create("div", "legend");
+  div.innerHTML += "<h4>Legend</h4>";
+	div.innerHTML += '<i class="icon" style="background-image: url(LeafletData/fishing.png.png);background-repeat: no-repeat;"></i><span>Fishing Spot</span><br>';
+	div.innerHTML += '<i class="icon" style="background-image: url(waterwell.png);background-repeat: no-repeat;"></i><span>Water Well</span><br>';
+  div.innerHTML += '<i style="background: #6F5033"></i><span>Hiking Trail</span><br>';
+  return div;
+};
+legend.addTo(map);		
+	  
 </script>
 </body>
 </html>
