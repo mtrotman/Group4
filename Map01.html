@@ -30,17 +30,25 @@
 	  
 	L.control.scale().addTo(map);	  
 
-	// load GeoJSON from an external file
-  $.getJSON("LeafletData/MVT_Trails_FeaturesToJSON2.geojson",function(data){
-    // add GeoJSON layer to the map once the file is loaded
-    L.geoJson(data).addTo(map);
-  });
+	var trail_color = {"color": "#6F5033"};
 	  
+// load GeoJSON from an external file
+  $.getJSON("MVT_Trails_FeaturesToJSON2.geojson",function(data){
+		var geojson = L.geoJson(data, {
+        style: trail_color, // Assign the style object to the "style" property of the layer
+        onEachFeature: function (feature, layer) {
+					layer.bindPopup(feature.properties.road_name);
+        	}
+    		});
+    //add geojson layer to map
+		geojson.addTo(map);	
+  });
+
 	  // load GeoJSON from an external file
-  $.getJSON("LeafletData/Fishing.geojson",function(data){
+$.getJSON("Fishing.geojson",function(data){
     //Add fish icon 
 	var fishIcon = L.icon({
-    iconUrl: 'LeafletData/Fishing.png',
+    iconUrl: 'Fishing.png',
     iconSize: [50,40]
   }); 
   L.geoJson(data  ,{
@@ -50,7 +58,23 @@
   return marker; 
 		}
   }  ).addTo(map);
-});
+});	  
+
+$.getJSON("Well.geojson",function(data){
+    //Add fish icon 
+	var wellIcon = L.icon({
+    iconUrl: 'waterwell.png',
+    iconSize: [50,40]
+  }); 
+  L.geoJson(data  ,{
+    pointToLayer: function(feature,latlng){
+	var marker = L.marker(latlng,{icon: wellIcon});
+  marker.bindPopup("Water Well").openPopup();
+  return marker; 
+		}
+  }  ).addTo(map);
+});	  	  
+		
 </script>
 </body>
 </html>
