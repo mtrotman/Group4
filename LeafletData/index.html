@@ -47,7 +47,8 @@
     pointToLayer: function(feature,latlng){
 	var marker = L.marker(latlng,{icon: fishIcon});
   marker.bindPopup("Fishing Spot").openPopup();
-  return marker;  
+  return marker; 
+}).addTo(map);
 
 // load GeoJSON from an external file
   $.getJSON("Well.geojson",function(data){
@@ -61,8 +62,6 @@
 	var marker = L.marker(latlng,{icon: WellIcon});
   marker.bindPopup("Well").openPopup();
   return marker; 
-
-    }
   }).addTo(map); 
 });	  
 	L.control.scale().addTo(map);
