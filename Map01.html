@@ -37,7 +37,7 @@
 		var geojson = L.geoJson(data, {
         style: trail_color, // Assign the style object to the "style" property of the layer
         onEachFeature: function (feature, layer) {
-					layer.bindPopup("<h1>Hiking Trail</h1>" + 
+					layer.bindPopup("<h1>Hiking Trail</h1>"
 							+ "<b>Trail Name:  </b>" + feature.properties.Name + "</br>" 
 							+ "<b>Trail Area:  </b>" + feature.properties.AREA + "</br>" 
 						       	+ "<b>Trail Type:  </b>" + feature.properties.TYPE + "</br>"
@@ -60,7 +60,7 @@ $.getJSON("LeafletData/Fishing.geojson",function(data){
   L.geoJson(data  ,{
     pointToLayer: function(feature,latlng){
 	var marker = L.marker(latlng,{icon: fishIcon});
-  marker.bindPopup("<h1>Fishing Spot</h1>" + "</br>" + "<img src='fishing.jpg' height='160px' width='84px'/>").openPopup();
+  marker.bindPopup("<h1>Fishing Spot</h1>" + "</br>" + "<img src='fishing.jpg' height='84px' width='160px'/>").openPopup();
   return marker; 
 		}
   }  ).addTo(map);
@@ -75,7 +75,7 @@ $.getJSON("LeafletData/Well.geojson",function(data){
   L.geoJson(data  ,{
     pointToLayer: function(feature,latlng){
 	var marker = L.marker(latlng,{icon: wellIcon});
-  marker.bindPopup("<h1>Water Well</h1>" + "</br>" + "<img src='Water_Well.jpg' height='160px' width='128px'/>").openPopup();
+  marker.bindPopup("<h1>Water Well</h1>" + "</br>" + "<img src='Water_Well.jpg' height='128px' width='160px'/>").openPopup();
   return marker; 
 		}
   }  ).addTo(map);
