@@ -52,6 +52,21 @@ $.getJSON("Fishing.geojson",function(data){
   }  ).addTo(map);
 });	  
 
+$.getJSON("Well.geojson",function(data){
+    //Add fish icon 
+	var wellIcon = L.icon({
+    iconUrl: 'waterwell.png',
+    iconSize: [50,40]
+  }); 
+  L.geoJson(data  ,{
+    pointToLayer: function(feature,latlng){
+	var marker = L.marker(latlng,{icon: wellIcon});
+  marker.bindPopup("Water Well").openPopup();
+  return marker; 
+		}
+  }  ).addTo(map);
+});	  	  
+	  
 L.control.scale().addTo(map);
   </script>
 </body>
