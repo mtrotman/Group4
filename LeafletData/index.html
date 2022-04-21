@@ -35,7 +35,7 @@
 		var geojson = L.geoJson(data, {
         style: trail_color, // Assign the style object to the "style" property of the layer
         onEachFeature: function (feature, layer) {
-					layer.bindPopup(features.properties.Name);
+					layer.bindPopup(feature.properties.Name);
         	}
     		});
     //add geojson layer to map
