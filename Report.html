@@ -67,6 +67,66 @@
     </footer>
   </div>
 </div>
+<!--Heading 1-->
+<h1><b> Exploring MapBox as a solution for the Baxter Creek Water Shed Alliance Website </b></h1> 
+<br>
+<h2><b> Problem: </b></h2> 
+<p>There are no good maps about the Baxter Creek Watershed. As a result, visitors to the area are not aware of the Baxter Creek Watershed and it's ecological or natural features.They may get lost whilst using the trails and miss key points of interest. </p>  
+<br>
+<h2><b> Solution: </b></h2>
+To create a thematic map to display and educate the general public on the Baxter Creek Watershed, using MapBox and Leaflet then compare the two to see which program creates a better thematic map.</p>   
+<br>
+<h2><b> What is MapBox? </b></h2>
+<p> MapBox is an online tool that gives people real time access to nagivation tools, maps and data. They are resonsible for the technology behind many apps that help people navigate to where they need to be 24 hours a day, 7 days a week. Thousands of companies utilize MapBox services in aid of navigational software in cars and smartphones. There are over 600 million monthly active users that trust their ability to run their services. This is a global service delivering to customers in farming, manufacturing, ecommerce and more industries.  </p> 
+<br>
+<h2><b> Why use MapBox? </b></h2> 
+<p> MapBox has the compacity to deliver results for hundereds of different types of services needed by anyone from the average person to multi-million dollar companies. They are constantly updating their services to keep up with industry requirements. There are many options of Mapbox to fully supply any services needed of a client. The clientelle ranges from BMW to National Geographic to CNN. </p>  
+<br>	
+
+<!--Solution Steps-->  
+<h2><b> Solution Steps: </b></h2> 
+<p> Below are the steps we took to create the map featured on this page: </p>
+<br>	
+
+<h2><b>Step 1: </b></h2> 
+<p>A group Github repository was created for Group4. All files used in this website are hosted there.</p> 
+<br>	
+	
+<h2><b>Step 2: MapBox Studio Manual - MapBox</b></h2> 	
+<p> The group created MapBox01.html using the MapBox Studio Manual using the MapBox GL JS featured. </p> 
+<img src="/Group4/pics/MApBoxManual.png" alt="MapBoxGuide" style="width:450px;height:300px;">
+<br>
+	
+
+<h2><b>Step 3: ArcGIS Pro - Problem - Feature Class to GeoJSON  </b></h2> 	 
+<p>We started by bringing the Baxter Creek trail file to ArcGIS Pro in order to export the data as a GeoJSON file so that we would be able to bring it into the MapBox Editor. The original plan was to bring them into MapBox as GeoJSON files but that created an error within MapBox upon upload. We could not directly create the trail data within the MapBox Editor so we had to determine a work around to be able to upload the data. We realized that we were able to upload different file types so we decided to test if a shapefile would upload properly and not cause the same error. </p>
+<img src="/Group4/pics/uploadfail2.png" alt="UploadFail" style="width:350px;height:300px;">
+<br>
+	
+	
+<h2><b>Step 4: Converted MVT_Trails_Feature - Feature Class to Shapefile </b></h2> 	  
+<p> The MVT_Trails_Features Feature Class was downloaded from ArcGIS Online and converted to shapefile after the GeoJSON upload technique failed. After converting the Baxter Creek Trails Feature Class to a Shapefile we then uploaded it onto ArcGIS Online so we could download it. This was then uploaded to MapBox as a Custom Tilesets. We repeated this process with the two sets of point data which we created as Feature Classes directly within ArcGIS Pro. Those two points being one to represent a fishing spot along the river and one to represent the artesian well in the area.</p>  
+<img src="/Group4/pics/toshapefile.png" alt="ShapeFile"  style="width:400px;height:350px;">
+<br>
+	
+<h2><b>Step 5: Add shapefiles within the Custom Tilesets to MapBox Editor</b></h2> 	
+<p> We added in the shapefiles to the MapBox Editor with success. We had to ZIP the files to bring them into MapBox. This was the workflow that finally allowed us to bring our data into MapBox! </p>  
+<img src="/Group4/pics/success.png" alt="success">
+<br>
+	
+<h2><b>Step 6: Bring Custom Tilesets into Outdoors Basemap</b></h2> 	  
+<p>Added in new layers and connected the Tilesets to edit the map. The point symbols do not allow to change symbol - have to download symbols to further edit the design. </p> 
+ <img src="/Group4/pics/editingcolours.png" alt="colours">
+<br>
+ 
+<h2><b>Step 7: Iframe</b></h2> 	
+<p> The zoom level needed to edited to allow the map to be properly visible within the Iframe. We used iframe to put one interactive map html into another webpage. We did this to better control the dimension of the map frame.</p>  
+<br> 
+
+<h2><b>Step 8: Continued Information Collection</b></h2> 	
+<p> We realized after finishing the map that there was a link in the bottom right corner of the map which states "Improve this map". Upon clicking the link the user is sent to a page where they are able to add in their own information/data. After entering their information they are promted to enter their email which will allow them to recieve a conformation email from MapBox stating that their data is under review by the MapBox team before it is added to the map. The screenshot below is the conformation email the user will recieve after entering their data.</p>  
+<img src="/Group4/pics/MapboxFeedBack.png" alt="Feedback">
+<br> 
 
 <!-- Heading --> 
 <h1><b> Exploring Leaflet as a solution for the Baxter Creek Water Shed Alliance website </b></h1> 
