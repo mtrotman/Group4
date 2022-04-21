@@ -57,7 +57,7 @@ $.getJSON("Fishing.geojson",function(data){
   L.geoJson(data  ,{
     pointToLayer: function(feature,latlng){
 	var marker = L.marker(latlng,{icon: fishIcon});
-  marker.bindPopup("<h1>Fishing Spot</h1>" + "</br>" + "img src='Fishing.png' height='150px' width='150px'/>").openPopup();
+  marker.bindPopup("<h1>Fishing Spot</h1>" + "</br>" + "<img src='Fishing.png' height='150px' width='150px'/>").openPopup();
   return marker; 
 		}
   }  ).addTo(map);
