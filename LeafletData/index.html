@@ -37,10 +37,10 @@
   });
 
 	  // load GeoJSON from an external file
-$.getJSON("LeafletData/Fishing.geojson",function(data){
+$.getJSON("Fishing.geojson",function(data){
     //Add fish icon 
 	var fishIcon = L.icon({
-    iconUrl: 'LeafletData/Fishing.png',
+    iconUrl: 'Fishing.png',
     iconSize: [50,40]
   }); 
   L.geoJson(data  ,{
