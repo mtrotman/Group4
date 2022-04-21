@@ -37,10 +37,10 @@
   });
 
 	  // load GeoJSON from an external file
-  $.getJSON("Fishing.geojson",function(data){
+$.getJSON("LeafletData/Fishing.geojson",function(data){
     //Add fish icon 
 	var fishIcon = L.icon({
-    iconUrl: 'Fishing.png',
+    iconUrl: 'LeafletData/Fishing.png',
     iconSize: [50,40]
   }); 
   L.geoJson(data  ,{
@@ -48,23 +48,11 @@
 	var marker = L.marker(latlng,{icon: fishIcon});
   marker.bindPopup("Fishing Spot").openPopup();
   return marker; 
-}).addTo(map);
-
-// load GeoJSON from an external file
-  $.getJSON("Well.geojson",function(data){
-    //Add Well icon 
-	var WellIcon = L.icon({
-    iconUrl: 'waterwell.png',
-    iconSize: [50,40]
-  }); 
-  L.geoJson(data  ,{
-    pointToLayer: function(feature,latlng){
-	var marker = L.marker(latlng,{icon: WellIcon});
-  marker.bindPopup("Well").openPopup();
-  return marker; 
-  }).addTo(map); 
+		}
+  }  ).addTo(map);
 });	  
-	L.control.scale().addTo(map);
+
+L.control.scale().addTo(map);
   </script>
 </body>
 </html>
