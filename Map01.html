@@ -37,7 +37,7 @@
 		var geojson = L.geoJson(data, {
         style: trail_color, // Assign the style object to the "style" property of the layer
         onEachFeature: function (feature, layer) {
-					layer.bindPopup("<h1>Hiking Trail</h1>" + </br> + 
+					layer.bindPopup("<h1>Hiking Trail</h1>" + 
 							+ "<b>Trail Name:  </b>" + feature.properties.Name + "</br>" 
 							+ "<b>Trail Area:  </b>" + feature.properties.AREA + "</br>" 
 						       	+ "<b>Trail Type:  </b>" + feature.properties.TYPE + "</br>"
