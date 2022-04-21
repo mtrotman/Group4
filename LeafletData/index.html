@@ -35,12 +35,12 @@
 		var geojson = L.geoJson(data, {
         style: trail_color, // Assign the style object to the "style" property of the layer
         onEachFeature: function (feature, layer) {
-					layer.bindPopup("<h1>Trail Name: <h1>" + feature.properties.Name + "</br>" 
-							+ "<h1>Trail Area: <h1>" + feature.properties.AREA + "</br>" 
-						       	+ "<h1>Trail Type: <h1>" + feature.properties.TYPE + "</br>"
-							+ "<h1>Trail Owner: <h1>" + feature.properties.Owner + "</br>"
-							+ "<h1>Primary Use: <h1>" + feature.properties.PrimaryUse + "</br>"
-							+ "<h1>Section: <h1>" + feature.properties.Section + "</br>");
+					layer.bindPopup("<h1>Trail Name: </h1>" + feature.properties.Name + "</br>" 
+							+ "<h1>Trail Area: </h1>" + feature.properties.AREA + "</br>" 
+						       	+ "<h1>Trail Type: </h1>" + feature.properties.TYPE + "</br>"
+							+ "<h1>Trail Owner: </h1>" + feature.properties.Owner + "</br>"
+							+ "<h1>Primary Use: </h1>" + feature.properties.PrimaryUse + "</br>"
+							+ "<h1>Section: </h1>" + feature.properties.Section + "</br>");
         	}
     		});
     //add geojson layer to map
@@ -57,7 +57,7 @@ $.getJSON("Fishing.geojson",function(data){
   L.geoJson(data  ,{
     pointToLayer: function(feature,latlng){
 	var marker = L.marker(latlng,{icon: fishIcon});
-  marker.bindPopup("<h1>Fishing Spot<h1>").openPopup();
+  marker.bindPopup("<h1>Fishing Spot</h1>").openPopup();
   return marker; 
 		}
   }  ).addTo(map);
@@ -72,7 +72,7 @@ $.getJSON("Well.geojson",function(data){
   L.geoJson(data  ,{
     pointToLayer: function(feature,latlng){
 	var marker = L.marker(latlng,{icon: wellIcon});
-  marker.bindPopup("Water Well").openPopup();
+  marker.bindPopup("<h1>Water Well</h1>").openPopup();
   return marker; 
 		}
   }  ).addTo(map);
