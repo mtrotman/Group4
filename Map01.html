@@ -54,13 +54,13 @@
 $.getJSON("LeafletData/Fishing.json",function(data){
     //Add fish icon 
 	var fishIcon = L.icon({
-    iconUrl: 'LeafletData/fishing.png',
+    iconUrl: 'images/fishing.png',
     iconSize: [50,40]
   }); 
   L.geoJson(data  ,{
     pointToLayer: function(feature,latlng){
 	var marker = L.marker(latlng,{icon: fishIcon});
-  marker.bindPopup("<h1>Fishing Spot</h1>" + "</br>" + "<img src='fishing.jpg' height='84px' width='160px'/>").openPopup();
+  marker.bindPopup("<h1>Fishing Spot</h1>" + "</br>" + "<img src='images/fishing.jpg' height='84px' width='160px'/>").openPopup();
   return marker; 
 		}
   }  ).addTo(map);
@@ -69,13 +69,13 @@ $.getJSON("LeafletData/Fishing.json",function(data){
 $.getJSON("LeafletData/Well.json",function(data){
     //Add fish icon 
 	var wellIcon = L.icon({
-    iconUrl: 'LeafletData/waterwell.png',
+    iconUrl: 'images/waterwell.png',
     iconSize: [50,40]
   }); 
   L.geoJson(data  ,{
     pointToLayer: function(feature,latlng){
 	var marker = L.marker(latlng,{icon: wellIcon});
-  marker.bindPopup("<h1>Water Well</h1>" + "</br>" + "<img src='Water_Well.jpg' height='128px' width='160px'/>").openPopup();
+  marker.bindPopup("<h1>Water Well</h1>" + "</br>" + "<img src='images/Water_Well.jpg' height='128px' width='160px'/>").openPopup();
   return marker; 
 		}
   }  ).addTo(map);
@@ -86,8 +86,8 @@ var legend = L.control({ position: "bottomright" });
 legend.onAdd = function(map) {
   var div = L.DomUtil.create("div", "legend");
   div.innerHTML += "<h4>Legend</h4>";
-	div.innerHTML += '<i class="icon" style="background-image: url(LeafletData/fishing.png);background-repeat: no-repeat;"></i><span>Fishing Spot</span><br>';
-	div.innerHTML += '<i class="icon" style="background-image: url(LeafletData/waterwell.png);background-repeat: no-repeat;"></i><span>Water Well</span><br>';
+	div.innerHTML += '<i class="icon" style="background-image: url(images/fishing.png);background-repeat: no-repeat;"></i><span>Fishing Spot</span><br>';
+	div.innerHTML += '<i class="icon" style="background-image: url(images/waterwell.png);background-repeat: no-repeat;"></i><span>Water Well</span><br>';
   div.innerHTML += '<i style="background: #6F5033"></i><span>Hiking Trail</span><br>';
   return div;
 };
