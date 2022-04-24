@@ -61,7 +61,8 @@
 }
 
 #logo {
-  width:80%;
+  width: 80%;
+  left: 10%;
   min-height:21px;
   max-height:336px;
   min-width:50px;
