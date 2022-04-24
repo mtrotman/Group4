@@ -16,11 +16,11 @@
 }
 
 #Map01frame {
-  position: relative;
-  padding-left:5%;
+  position: absolute;
+  left: 5%;
   top: 0;
   width: 90%;
-  height：90%;
+  height: 90%;
   max-width: 1280px;
   max-height: 720px;
 }
