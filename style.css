@@ -9,19 +9,19 @@
 }
 
 #Ideal {
-  padding-left: 16px;
+  padding-left: 2.5%;
 }
 
 #reportcontent {
-  padding-left: 16px;
+  padding-left: 2.5%;
 }
 
 .title01 {
-  padding-left: 5%;
+  padding-left: 2.5%;
 }
 
 .title02 {
-  padding-left: 5%;
+  padding-left: 2.5%;
 }
 
 #maptitle {
@@ -70,10 +70,6 @@
   max-height: 720px;
   frameborder = "2"
 }
-
-/*#Map_Leaflet {
-  height: 480px;
-}*/
 
 #Map_Leaflet01 {
   height: 100%;
