@@ -9,11 +9,11 @@
 }
 
 #Ideal {
-  padding-left: 5%;
+  padding-left: 16px;
 }
 
 #reportcontent {
-  padding-left: 5%;
+  padding-left: 16px;
 }
 
 .title01 {
@@ -36,12 +36,6 @@
   max-height: 800px;
 }
 
-#Map02 {
-  position: relative;
-  text-align: center;
-  max-height: 840px;
-}
-
 #Map01frame {
   position: absolute;
   text-align: center;
@@ -57,7 +51,7 @@
   position: absolute;
   text-align: center;
   top: 0;
-  left: 0;
+  left: 5%;
   width: 90%;
   height: 90%;
   max-width: 1280px;
@@ -69,7 +63,7 @@
   position: absolute;
   text-align: center;
   top: 0;
-  left: 0;
+  left: 5%;
   width: 90%;
   height: 90%;
   max-width: 1280px;
@@ -77,9 +71,9 @@
   frameborder = "2"
 }
 
-#Map_Leaflet {
+/*#Map_Leaflet {
   height: 480px;
-}
+}*/
 
 #Map_Leaflet01 {
   height: 100%;
