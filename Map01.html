@@ -33,7 +33,7 @@
 	var trail_color = {"color": "#6F5033"};
 	  
 // load GeoJSON from an external file
-  $.getJSON("LeafletData/MVT_Trails_FeaturesToJSON2.geojson",function(data){
+  $.getJSON("LeafletData/MVT_Trails.json",function(data){
 		var geojson = L.geoJson(data, {
         style: trail_color, // Assign the style object to the "style" property of the layer
         onEachFeature: function (feature, layer) {
@@ -66,7 +66,7 @@ $.getJSON("LeafletData/Fishing.json",function(data){
   }  ).addTo(map);
 });	  
 
-$.getJSON("LeafletData/Well.geojson",function(data){
+$.getJSON("LeafletData/Well.json",function(data){
     //Add fish icon 
 	var wellIcon = L.icon({
     iconUrl: 'LeafletData/waterwell.png',
