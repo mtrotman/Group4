@@ -102,23 +102,23 @@
 
 <h2 class="title02"><b>Step 3: ArcGIS Pro - Problem - Feature Class to GeoJSON  </b></h2> 	 
 <p>We started by bringing the Baxter Creek trail file to ArcGIS Pro in order to export the data as a GeoJSON file so that we would be able to bring it into the MapBox Editor. The original plan was to bring them into MapBox as GeoJSON files but that created an error within MapBox upon upload. We could not directly create the trail data within the MapBox Editor so we had to determine a work around to be able to upload the data. We realized that we were able to upload different file types so we decided to test if a shapefile would upload properly and not cause the same error. </p>
-<img src="/Group4/pics/uploadfail2.png" alt="UploadFail" style="width:350px;height:300px;">
+<img src="pics/uploadfail2.png" alt="UploadFail" style="width:350px;height:300px;">
 <br>
 	
 	
 <h2 class="title02"><b>Step 4: Converted MVT_Trails_Feature - Feature Class to Shapefile </b></h2> 	  
 <p> The MVT_Trails_Features Feature Class was downloaded from ArcGIS Online and converted to shapefile after the GeoJSON upload technique failed. After converting the Baxter Creek Trails Feature Class to a Shapefile we then uploaded it onto ArcGIS Online so we could download it. This was then uploaded to MapBox as a Custom Tilesets. We repeated this process with the two sets of point data which we created as Feature Classes directly within ArcGIS Pro. Those two points being one to represent a fishing spot along the river and one to represent the artesian well in the area.</p>  
-<img src="/Group4/pics/toshapefile.png" alt="ShapeFile"  style="width:400px;height:350px;">
+<img src="pics/toshapefile.png" alt="ShapeFile"  style="width:400px;height:350px;">
 <br>
 	
 <h2 class="title02"><b>Step 5: Add shapefiles within the Custom Tilesets to MapBox Editor</b></h2> 	
 <p> With the new solution we were able to add the shapefiles to the MapBox Editor with success. In order to properly import these files we  had to ZIP the files in order to actually bring them into MapBox. This was the workflow that finally allowed us to bring our data into MapBox! </p>  
-<img src="/Group4/pics/success.png" alt="success">
+<img src="pics/success.png" alt="success">
 <br>
 	
 <h2 class="title02"><b>Step 6: Bring Custom Tilesets into Outdoors Basemap</b></h2> 	  
 <p>After thy were added in as new layers, they were connected to the map as Custom Tilesets which were then added onto the map. The point symbols do not allow us to change the symbols. In order to change them we would have had to download individual symbols for each point in order to edit the design. </p> 
- <img src="/Group4/pics/editingcolours.png" alt="colours">
+ <img src="pics/editingcolours.png" alt="colours">
 <br>
  
 <h2 class="title02"><b>Step 7: Iframe</b></h2> 	
@@ -127,7 +127,7 @@
 
 <h2 class="title02"><b>Step 8: Continued Information Collection</b></h2> 	
 <p> We realized after finishing the map that there was a link in the bottom right corner of the map which states "Improve this map". Upon clicking the link the user is sent to a page where they are able to add in their own information/data. After entering their information they are promted to enter their email which will allow them to recieve a conformation email from MapBox stating that their data is under review by the MapBox team before it is added to the map. The screenshot below is the conformation email the user will recieve after entering their data.</p>  
-<img src="/Group4/pics/MapboxFeedBack.png" alt="Feedback" style="width:500px;height:300px;">
+<img src="pics/MapboxFeedBack.png" alt="Feedback" style="width:500px;height:300px;">
 <br> 
 
 <!-- Heading --> 
@@ -157,28 +157,28 @@ To create a thematic map to display and educate the general public on the Baxter
 	
 <h2 class="title02"><b>Step 2: Quick Start Guide - Leaflet </b></h2> 	
 <p> The group created CreateLeaflet.html using the Quick Start Guide featured <a href="https://leafletjs.com/SlavaUkraini/examples/quick-start/" target="popup" onclick="window.open('https://leafletjs.com/SlavaUkraini/examples/quick-start/','popup','width=1280,height=720'); return false;">Here</a>. This guide used the mapbox/streets-v11 tiles from Mapbox’s Static Tiles API. In order to use this, we were asked to use an access token. Thus, we requested the public default access token to use the tile layer from MapBox. We experienced difficulties using this token and accessing the tile layer. </p> 
-<img src="/Group4/pics/QuickStartGuide.jpg" alt="Quick Start Guide of Leaflet">
+<img src="pics/QuickStartGuide.jpg" alt="Quick Start Guide of Leaflet">
 <br>
 	
 <h2 class="title02"><b>Step 3: Simple Leaflet Examples - Github </b></h2> 	 
 <p> Alternative examples in Github were turned to understand how to integrate tiles into the map we were creating. The following examples were used to understand how different plugins looked once deployed from Github. Even though they were slightly complex to follow along with at times, it helped in understanding the basics of using Leaflet. These examples were created by <a href="https://github.com/Lapizistik/leaflet-examples" target="popup" onclick="window.open('https://github.com/Lapizistik/leaflet-examples','popup','width=1280,height=720'); return false;">by Klaus Stein</a> and <a href="https://github.com/StephSaephan/leaflet-map-example" target="popup" onclick="window.open('https://github.com/StephSaephan/leaflet-map-example','popup','width=1280,height=720'); return false;">Stephanie Saephan</a> in Github.</p>  
-<img src="/Group4/pics/LeafletExampleLapiz.jpg" alt="Leaflet Example">
+<img src="pics/LeafletExampleLapiz.jpg" alt="Leaflet Example">
 <br>
 
 <h2 class="title02"><b>Step 4: Implement Tiles</b></h2> 	 
 <p>This webpage created by <a href="https://maptimeboston.github.io/leaflet-intro/" target="popup" onclick="window.open('https://maptimeboston.github.io/leaflet-intro/','popup','width=1280,height=720'); return false;">Andy Woodruff, Ryan Mullins and Cristen Jones</a>  for Maptime Boston featured a rather simple tutorial to Leaflet which the group eneded up using. We used their example to integrate the tile layer: OpenStreetMap.Mapnik from <a href="http://leaflet-extras.github.io/leaflet-providers/preview/" target="popup" onclick="window.open('http://leaflet-extras.github.io/leaflet-providers/preview/','popup','width=1280,height=720'); return false;">here</a> into our map using JQuery. There was difficulty in downloading JQuery v3.6.0 from jquery.com in Chrome, Mozilla and Edge for some time for reasons unknown. However, the JQuery Javascript library was downloaded and uploaded to the repository.</p> 
-<img src="/Group4/pics/MapBoston.jpg" alt="Leaflet Example">
+<img src="pics/MapBoston.jpg" alt="Leaflet Example">
 <br>
 	
 	
 <h2 class="title02"><b>Step 5: Converted MVT_Trails_Feature shape file to GeoJSON file</b></h2> 	  
 <p>The MVT_Trails_Features shape file was downloaded from ArcGIS Online and converted  to GeoJSON using ArcGISPro using the Features to GeoJSON conversion tool. This was uploaded to the Group 4 repository and accessed/added to the current map using Javascript.</p>  
-<img src="/Group4/pics/MVT.jpg" alt="Trails">
+<img src="pics/MVT.jpg" alt="Trails">
 <br>
 	
 <h2 class="title02"><b>Step 6: Created points Fishing Spots using geojson.io</b></h2> 	
 <p>The group used geojson.io to create hypothetical fishing points in the Baxter Creek Water Shed. This GeoJSON file was saved to the Group 4 Github repository. These points were edited to represent fishing icons and added to the current map using Javascript.</p>  
-<img src="/Group4/pics/FishingSpots.jpg" alt="Fishing Spots">
+<img src="pics/FishingSpots.jpg" alt="Fishing Spots">
 <br>
 	
 <h2 class="title02"><b>Step 7: Map formatting and Sizing Difficulties</b></h2> 	  
