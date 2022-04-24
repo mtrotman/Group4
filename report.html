@@ -45,7 +45,7 @@
 <!-- Image Header (team logo) -->
 <div class="w3-display-container w3-animate-opacity">
   <img id="logo" src="https://img1.wsimg.com/isteam/ip/6f3cf339-fe96-4ec4-8bf9-7e5529b4e3fb/BCWA-Logo.png/:/rs=w:800,h:336,cg:true,m/cr=w:800,h:336/qt=q:95" alt="Logo">
-  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+  <div class="w3-container w3-display-bottomright w3-margin-bottom">  
     <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">Click Here!</button>
   </div>
 </div>
@@ -156,17 +156,17 @@ To create a thematic map to display and educate the general public on the Baxter
 <br>	
 	
 <h2 class="title02"><b>Step 2: Quick Start Guide - Leaflet </b></h2> 	
-<p> The group created CreateLeaflet.html using the Quick Start Guide featured <a href="https://leafletjs.com/SlavaUkraini/examples/quick-start/">Here</a>. This guide used the mapbox/streets-v11 tiles from Mapbox’s Static Tiles API. In order to use this, we were asked to use an access token. Thus, we requested the public default access token to use the tile layer from MapBox. We experienced difficulties using this token and accessing the tile layer. </p> 
+<p> The group created CreateLeaflet.html using the Quick Start Guide featured <a href="https://leafletjs.com/SlavaUkraini/examples/quick-start/" target="popup" onclick="window.open('https://leafletjs.com/SlavaUkraini/examples/quick-start/','popup','width=1280,height=720'>Here</a>. This guide used the mapbox/streets-v11 tiles from Mapbox’s Static Tiles API. In order to use this, we were asked to use an access token. Thus, we requested the public default access token to use the tile layer from MapBox. We experienced difficulties using this token and accessing the tile layer. </p> 
 <img src="/Group4/pics/QuickStartGuide.jpg" alt="Quick Start Guide of Leaflet">
 <br>
 	
 <h2 class="title02"><b>Step 3: Simple Leaflet Examples - Github </b></h2> 	 
-<p> Alternative examples in Github were turned to understand how to integrate tiles into the map we were creating. The following examples were used to understand how different plugins looked once deployed from Github. Even though they were slightly complex to follow along with at times, it helped in understanding the basics of using Leaflet. These examples were created by <a href="map:https://github.com/Lapizistik/leaflet-examples">by Klaus Stein</a> and <a href="https://github.com/StephSaephan/leaflet-map-example">Stephanie Saephan</a> in Github.</p>  
+<p> Alternative examples in Github were turned to understand how to integrate tiles into the map we were creating. The following examples were used to understand how different plugins looked once deployed from Github. Even though they were slightly complex to follow along with at times, it helped in understanding the basics of using Leaflet. These examples were created by <a href="map:https://github.com/Lapizistik/leaflet-examples" target="popup" onclick="window.open('map:https://github.com/Lapizistik/leaflet-examples','popup','width=1280,height=720'>by Klaus Stein</a> and <a href="https://github.com/StephSaephan/leaflet-map-example" target="popup" onclick="window.open('https://github.com/StephSaephan/leaflet-map-example','popup','width=1280,height=720'>Stephanie Saephan</a> in Github.</p>  
 <img src="/Group4/pics/LeafletExampleLapiz.jpg" alt="Leaflet Example">
 <br>
 
 <h2 class="title02"><b>Step 4: Implement Tiles</b></h2> 	 
-<p>This webpage created by <a href="https://maptimeboston.github.io/leaflet-intro/" target="popup" onclick="window.open('https://mtrotman.github.io/Group4/Map01.html','popup','width=1280,height=720'); return false;">Andy Woodruff, Ryan Mullins and Cristen Jones</a>  for Maptime Boston featured a rather simple tutorial to Leaflet which the group eneded up using. We used their example to integrate the tile layer: OpenStreetMap.Mapnik from <a href="http://leaflet-extras.github.io/leaflet-providers/preview/" target="popup" onclick="window.open('https://mtrotman.github.io/Group4/Map01.html','popup','width=1280,height=720'); return false;">here</a> into our map using JQuery. There was difficulty in downloading JQuery v3.6.0 from jquery.com in Chrome, Mozilla and Edge for some time for reasons unknown. However, the JQuery Javascript library was downloaded and uploaded to the repository.</p> 
+<p>This webpage created by <a href="https://maptimeboston.github.io/leaflet-intro/" target="popup" onclick="window.open('https://maptimeboston.github.io/leaflet-intro/','popup','width=1280,height=720'); return false;">Andy Woodruff, Ryan Mullins and Cristen Jones</a>  for Maptime Boston featured a rather simple tutorial to Leaflet which the group eneded up using. We used their example to integrate the tile layer: OpenStreetMap.Mapnik from <a href="http://leaflet-extras.github.io/leaflet-providers/preview/" target="popup" onclick="window.open('http://leaflet-extras.github.io/leaflet-providers/preview/','popup','width=1280,height=720'); return false;">here</a> into our map using JQuery. There was difficulty in downloading JQuery v3.6.0 from jquery.com in Chrome, Mozilla and Edge for some time for reasons unknown. However, the JQuery Javascript library was downloaded and uploaded to the repository.</p> 
 <img src="/Group4/pics/MapBoston.jpg" alt="Leaflet Example">
 <br>
 	
@@ -193,6 +193,7 @@ To create a thematic map to display and educate the general public on the Baxter
 <p> We had originally planned on using Google MyMaps to create our map but after testing it out for a few hours we believed that the interface was too simple. So we decided to use MapBox and Leaflet as an alternative. We knew that we wanted to learn more about Leaflet and MapBox services, so we thought the best way to do that would be to compare the capabilities of each of the interface by creating a similar map. After completing our maps, we found that Leaflet was significantly more user-friendly with its components and tools than MapBox's. While MapBox has many different default maps to choose from, the MapBox team found it extremely difficult to actually be able to make progress towards creating a map whereas the Leaflet team made progress almost instantly because their interface made it easier to actually add data into a map layout. Based on our obervations we came to the conclusion that the thematic map created by the Leaflet interface was significantly better visually and technically than the one created by MapBox.</p>
 <br>
 </div>
+
 <!-- Container -->
 <div class="w3-container" style="position:relative">
   <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
