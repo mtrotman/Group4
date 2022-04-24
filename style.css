@@ -8,11 +8,38 @@
   margin: 0;
 }
 
+#Ideal {
+  padding-left: 5%;
+}
+
+#reportcontent {
+  padding-left: 5%;
+}
+
+.title01 {
+  padding-left: 5%;
+}
+
+.title02 {
+  padding-left: 5%;
+}
+
+#maptitle {
+  font-style: italic;
+  padding-left: 5%
+}
+
 #Map01 {
   position: relative;
   text-align: center;
   padding-top: 56.25%;
   max-height: 800px;
+}
+
+#Map02 {
+  position: relative;
+  text-align: center;
+  max-height: 840px;
 }
 
 #Map01frame {
